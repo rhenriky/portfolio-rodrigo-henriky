@@ -3,51 +3,540 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Portfólio - Rodrigo Henriky</title>
+    <meta name="description" content="Portfólio de Rodrigo Henriky - Engenheiro da Computação especializado em sistemas embarcados, desenvolvimento web e inteligência artificial.">
+    <title>Portfólio - Rodrigo Henriky | Engenheiro da Computação</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Rodrigo Henriky</h1>
-        <p>Engenheiro da Computação</p>
-        <img src="https://www.unicesumar.edu.br/blog/wp-content/uploads/2021/08/engenharia-software.jpg " width="1500" height="500">
-    
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p> Engenharia da Computação, sempre em busca de inovação e desafios tecnológicos. Possuo experiência no desenvolvimento de soluções que integram software, hardware e sistemas embarcados, aplicando conhecimento em diversas áreas da computação para criar projetos eficientes e funcionais.</p>
-        <p>Linguagens e Tecnologias: C, Java, JavaScript, Flutter, CSS, HTML, Python, SQL, Banco de Dados PostgreSQL, MySQL.</p>
-    </section>
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div id="lista-projetos">
-            <ul>
-                <li><strong>Seguidor Solar:</strong> Sistema de rastreamento solar com motores de passo e Microcontrolador ESP32.</li>
-                <img src="https://www.gizmodo.com.br/app/uploads/2024/12/Iris-T1.2-1024x683.png" alt="Seguidor Solar de 2 Eixos" width="
-                500" height="300" style ="display: block; margin-left: auto; margin-right: auto;">
-                <li><strong>Compilador ANTLR:</strong> Implementação de um compilador com gramática personalizada.</li>
-                <li><strong> Flutter com Firebase:</strong> Apilicaçãoe Validação de produto, Apilicaçãoe de Sistema de marmitaria com Firebase.</li>
-                <li><strong>Microprocessadores:</strong> Implementação de um simulador de pipeline para um processador RISC.</li>
-                <li><strong>Inteligência Artificial:</strong> Desenvolvimento de um modelo de Machine Learning para reconhecimento de padrões.</li>
-                <li><strong>Redes de Computadores:</strong> Configuração de uma rede segura usando VLANs e protocolos de roteamento.</li>
-                <li><strong>Sistemas Embarcados:</strong> Desenvolvimento de um sistema de monitoramento remoto usando ESP32 e sensores.</li>
-            </ul>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Rodrigo Henriky</h1>
+                <p class="hero-subtitle">Engenheiro da Computação - IFMT</p>
+                <p class="hero-description">Formado pelo Instituto Federal Mato Grosso. Especializado em sistemas embarcados, desenvolvimento web, inteligência artificial e soluções inovadoras</p>
+                <div class="hero-buttons">
+                    <a href="#projetos-academicos" class="btn btn-primary">Ver Projetos Acadêmicos</a>
+                    <a href="#contato" class="btn btn-secondary">Entre em Contato</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://www.unicesumar.edu.br/blog/wp-content/uploads/2021/08/engenharia-software.jpg" alt="Engenharia da Computação" class="hero-img">
+            </div>
         </div>
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: RHenriky@prontoamail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/rodrigo-henriky#">https://www.linkedin.com/in/rodrigo-henriky/</a></p>
-        <p>Github: <a href="https://github.com/rhenriky#">https://github.com/rhenriky</a></p>
-    </section>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>RH</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projetos-academicos" class="nav-link">Projetos Acadêmicos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#habilidades" class="nav-link">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projetos" class="nav-link">Outros Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            Engenheiro da Computação formado pelo Instituto Federal de Mato Grosso (IFMT), uma das principais instituições de ensino técnico e superior do estado. O IFMT é reconhecido pela excelência acadêmica e pela formação de profissionais altamente qualificados em tecnologia. Durante minha graduação, tive acesso a laboratórios modernos, professores experientes e uma metodologia de ensino que integra teoria e prática de forma excepcional.
+                        </p>
+                        <p class="about-description">
+                            Minha jornada acadêmica no IFMT me permitiu trabalhar em projetos diversificados e desafiadores, desde sistemas web para análise de dados agrícolas até dispositivos IoT para automação solar. A instituição proporcionou um ambiente de aprendizado rico em recursos tecnológicos, incluindo laboratórios de redes, sistemas embarcados e desenvolvimento de software. Tenho experiência sólida no desenvolvimento de soluções que integram software, hardware e sistemas embarcados, com especialização em Inteligência Artificial utilizando Java e Python.
+                        </p>
+                        <div class="academic-highlight">
+                            <h3>Principais Projetos Acadêmicos:</h3>
+                            <ul class="academic-projects">
+                                <li><strong>Sistema QualiSoja:</strong> Plataforma web para análise e classificação de qualidade de grãos de soja, integrando banco de dados e algoritmos de processamento.</li>
+                                <li><strong>Placa no Esyeda:</strong> Desenvolvimento de hardware personalizado para sistemas embarcados, com foco em IoT e automação.</li>
+                                <li><strong>Seguidor Solar de 2 Eixos:</strong> Sistema automatizado tipo girassol para rastreamento solar, maximizando a eficiência energética através de sensores e motores de precisão.</li>
+                                <li><strong>IA com Java:</strong> Implementação de algoritmos de Machine Learning e processamento de dados utilizando Java para análise preditiva e classificação.</li>
+                                <li><strong>IA com Python:</strong> Desenvolvimento de modelos de Inteligência Artificial com Python, incluindo redes neurais, processamento de linguagem natural e visão computacional.</li>
+                            </ul>
+                        </div>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">9+</span>
+                                <span class="stat-label">Projetos Concluídos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Tecnologias</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">Anos de Experiência</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Graduação IFMT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos-academicos" class="section">
+            <div class="container">
+                <h2 class="section-title">Projetos Acadêmicos em Destaque</h2>
+                <div class="academic-projects-grid">
+                    <div class="academic-project-card">
+                        <div class="project-image">
+                            <img src="../img/seguidorsolargirassol.jpg" alt="Seguidor Solar de 2 Eixos" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-badge">Destaque</div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Seguidor Solar de 2 Eixos - Estilo Girassol</h3>
+                            <p class="project-description">
+                                Sistema automatizado de rastreamento solar que simula o comportamento de um girassol, 
+                                seguindo a trajetória do sol em dois eixos para maximizar a captação de energia solar. 
+                                Implementado com sensores LDR, servomotores e microcontrolador ESP32.
+                            </p>
+                            <div class="project-gallery">
+                                <h4>Outras Imagens do Projeto:</h4>
+                                <div class="gallery-images">
+                                    <img src="../img/SeguidorSolar.jpeg" alt="Seguidor Solar - Vista 1" class="gallery-img" onclick="openImage(this.src)">
+                                    <img src="../img/seguidorolsargirassol.jpg" alt="Seguidor Solar - Vista 2" class="gallery-img" onclick="openImage(this.src)">
+                                    <img src="../img/placadoseguidorsolar.png" alt="Placa do Seguidor Solar" class="gallery-img" onclick="openImage(this.src)">
+                                </div>
+                            </div>
+                            <div class="project-features">
+                                <span class="feature-tag">Rastreamento Duplo Eixo</span>
+                                <span class="feature-tag">Sensores LDR</span>
+                                <span class="feature-tag">ESP32</span>
+                                <span class="feature-tag">Automação Solar</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="academic-project-card">
+                        <div class="project-image">
+                            <img src="../img/Qualisoja.png" alt="Sistema QualiSoja" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sistema QualiSoja</h3>
+                            <p class="project-description">
+                                Plataforma web desenvolvida para análise e classificação da qualidade de grãos de soja. 
+                                O sistema integra algoritmos de processamento de dados, interface web intuitiva e 
+                                banco de dados robusto para gerenciamento de informações agrícolas.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature-tag">Análise de Qualidade</span>
+                                <span class="feature-tag">Web Application</span>
+                                <span class="feature-tag">Banco de Dados</span>
+                                <span class="feature-tag">Agronegócio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="academic-project-card">
+                        <div class="project-image">
+                            <img src="../img/placadoseguidorsolar.png" alt="Placa Esyeda" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Placa no Esyeda</h3>
+                            <p class="project-description">
+                                Desenvolvimento de hardware personalizado para sistemas embarcados, focando em 
+                                aplicações IoT e automação. Projeto envolveu design de PCB, programação de 
+                                microcontroladores e integração com sensores e atuadores.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature-tag">Hardware Custom</span>
+                                <span class="feature-tag">PCB Design</span>
+                                <span class="feature-tag">IoT</span>
+                                <span class="feature-tag">Sistemas Embarcados</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="academic-project-card">
+                        <div class="project-image">
+                            <img src="../img/eng.webp" alt="IA com Java" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Inteligência Artificial com Java</h3>
+                            <p class="project-description">
+                                Implementação de algoritmos de Machine Learning utilizando Java para análise preditiva, 
+                                classificação de dados e processamento inteligente. Projeto focado em otimização de 
+                                performance e integração com sistemas empresariais.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature-tag">Machine Learning</span>
+                                <span class="feature-tag">Java</span>
+                                <span class="feature-tag">Análise Preditiva</span>
+                                <span class="feature-tag">Big Data</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="academic-project-card">
+                        <div class="project-image">
+                            <img src="../img/comp.png" alt="IA com Python" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Inteligência Artificial com Python</h3>
+                            <p class="project-description">
+                                Desenvolvimento de modelos avançados de IA utilizando Python, incluindo redes neurais 
+                                profundas, processamento de linguagem natural e visão computacional. Aplicação em 
+                                reconhecimento de padrões e análise de dados complexos.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature-tag">Deep Learning</span>
+                                <span class="feature-tag">Python</span>
+                                <span class="feature-tag">TensorFlow</span>
+                                <span class="feature-tag">Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <div class="container">
+                <h2 class="section-title">Habilidades & Tecnologias</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-code"></i>
+                            Linguagens de Programação
+                        </h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Rust</span>
+                            <span class="skill-tag">Ruby</span>
+                            <span class="skill-tag">Dart</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-laptop-code"></i>
+                            Desenvolvimento Web
+                        </h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-database"></i>
+                            Banco de Dados
+                        </h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-microchip"></i>
+                            Sistemas Embarcados
+                        </h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">ESP32</span>
+                            <span class="skill-tag">Arduino</span>
+                            <span class="skill-tag">IoT</span>
+                            <span class="skill-tag">Sensores</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-brain"></i>
+                            Inteligência Artificial
+                        </h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-tools"></i>
+                            Ferramentas e Softwares
+                        </h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">GNS3</span>
+                            <span class="skill-tag">Esyeda</span>
+                            <span class="skill-tag">Máquinas Virtuais</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Eclipse</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Octave</span>
+                            <span class="skill-tag">Logisim</span>
+                            <span class="skill-tag">Proteus</span>
+                            <span class="skill-tag">Arduino IDE</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">VMware</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projetos" class="section">
+            <div class="container">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <div class="projects-grid">
+                    <div class="project-card featured">
+                        <div class="project-image">
+                            <img src="../img/seguidorsolargirassol2.jpg" alt="Seguidor Solar" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="Ver Projeto">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Código Fonte">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Seguidor Solar Automatizado</h3>
+                            <p class="project-description">
+                                Sistema inteligente de rastreamento solar com motores de passo e microcontrolador ESP32. 
+                                Implementa algoritmos de otimização para maximizar a captação de energia solar.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">ESP32</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">IoT</span>
+                                <span class="tech-tag">Sensores</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Compilador ANTLR</h3>
+                            <p class="project-description">
+                                Implementação completa de um compilador utilizando ANTLR com gramática personalizada 
+                                para análise léxica, sintática e semântica.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">ANTLR</span>
+                                <span class="tech-tag">Compiladores</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">App Flutter + Firebase</h3>
+                            <p class="project-description">
+                                Aplicação mobile para sistema de marmitaria com autenticação, validação de produtos 
+                                e gerenciamento em tempo real.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Dart</span>
+                                <span class="tech-tag">Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Simulador Pipeline RISC</h3>
+                            <p class="project-description">
+                                Simulador de pipeline para processador RISC implementando todas as etapas: 
+                                fetch, decode, execute, memory e writeback.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Assembly</span>
+                                <span class="tech-tag">Arquitetura</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">IA - Reconhecimento de Padrões (Python)</h3>
+                            <p class="project-description">
+                                Modelo de Machine Learning para reconhecimento de padrões utilizando Python, TensorFlow 
+                                e redes neurais para classificação avançada e análise de dados complexos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">ML</span>
+                                <span class="tech-tag">Deep Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">IA - Análise Preditiva (Java)</h3>
+                            <p class="project-description">
+                                Sistema de Inteligência Artificial desenvolvido em Java para análise preditiva e 
+                                classificação de dados, otimizado para performance em aplicações empresariais.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Weka</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Data Mining</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="../img/traplhodedes.png" alt="Rede Segura com VLANs" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="Ver Projeto">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="Documentação">
+                                        <i class="fas fa-file-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Trabalho de Redes - VPN com GNS3</h3>
+                            <p class="project-description">
+                                Projeto de redes desenvolvido utilizando o simulador GNS3 (Graphical Network Simulator) para 
+                                implementação e teste de infraestrutura VPN (Virtual Private Network). O GNS3 permitiu simular 
+                                topologias complexas de rede, configurar roteadores, switches e firewalls virtuais, além de testar 
+                                cenários reais de conectividade segura entre diferentes localidades. Foram implementados túneis 
+                                VPN IPSec, configurações de criptografia avançada e políticas de segurança para acesso remoto.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">GNS3</span>
+                                <span class="tech-tag">VPN</span>
+                                <span class="tech-tag">IPSec</span>
+                                <span class="tech-tag">Roteadores</span>
+                                <span class="tech-tag">Redes</span>
+                                <span class="tech-tag">Segurança</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title">Vamos Conversar?</h2>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p class="contact-description">
+                            Estou sempre aberto a novas oportunidades e projetos interessantes. 
+                            Entre em contato para discutirmos como posso contribuir com seu projeto.
+                        </p>
+                    </div>
+                    <div class="contact-grid">
+                        <a href="mailto:RHenriky@prontoamail.com" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Email</h3>
+                                <p>RHenriky@prontoamail.com</p>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+5565999166122" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Telefone</h3>
+                                <p>(65) 99916-6122</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/rodrigo-henriky/" target="_blank" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>LinkedIn</h3>
+                                <p>rodrigo-henriky</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/rhenriky" target="_blank" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>GitHub</h3>
+                                <p>rhenriky</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Rodrigo Henriky. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para visualização de imagens -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 </body>
 </html>
